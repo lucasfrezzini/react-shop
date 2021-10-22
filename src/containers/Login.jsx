@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '@styles/Login.scss';
 
 import logo from '@logos/logo_yard_sale.svg';
@@ -12,7 +12,7 @@ const Login = () => {
             <h1 className="title">Create a new password</h1>
             <p className="subtitle">Enter a new passwrd for yue account</p>
         
-            <form action="/" className="form">
+            <form action="/" className="form" ref={form}>
                 <label for="password" className="label">Password</label>
                 <input type="password" id="password" placeholder="*********" className="input input-password" />
         
